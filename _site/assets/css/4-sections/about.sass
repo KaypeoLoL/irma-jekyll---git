@@ -1,0 +1,67 @@
+section
+  h3
+    color: $red
+    margin: 0px
+    text-align: center
+    text-transform: uppercase
+    padding-top: 100px
+    padding-bottom: 30px
+
+  .face-lockup
+    max-width: 780px
+    margin: auto
+    display: flex
+    background:pink
+    justify-content: space-around
+    align-items: center
+    .face-img
+      +size(200px)
+      border-radius: 50%
+      background-image: url(../img/profile.jpg)
+      background-position: center
+      background-size: cover
+      order: 2
+    [class^="icon-"]
+      +size(80px)
+      border-radius: 50%
+      &.icon-tumblr
+        order: 3
+        &:hover
+          background-color: #35465c
+      &.icon-mail
+        order: 3
+        &:hover
+          background-color: yellow
+      &.icon-facebook
+        &:hover
+          background-color: #3b5998
+      &.icon-instagram
+        &:hover
+          background-color: #e1306c
+
+
+
+  @media screen and (max-width: 650px)
+    .face-lockup
+      display: block
+      text-align: center
+      div
+        display: inline-block
+      .face-img
+        display: block
+        background-position: center center
+        background-repeat: no-repeat
+        margin: auto
+        margin-bottom: 30px
+      [class^="icon-"]
+        padding: 30px
+
+
+
+  .text-wrap
+    padding: 0px 15px
+    max-width: 620px
+    margin: 50px auto
+    font-size: 24px
+    text-align: center
+    font-weight: 300
