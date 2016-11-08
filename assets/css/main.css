@@ -473,8 +473,8 @@ section .face-lockup {
 }
 
 section .face-lockup .face-img {
-		height: 200px;
 		width: 200px;
+		height: 200px;
 		border-radius: 50%;
 		background-image: url(../img/profile.jpg);
 		background-position: center;
