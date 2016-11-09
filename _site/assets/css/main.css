@@ -544,7 +544,7 @@ section .cta {
 		font-weight: 600;
 		letter-spacing: 1.5px;
 		display: block;
-		margin: auto;
+		margin: 40px auto;
 		width: 100px;
 		text-align: center;
 		background-color: #FF4136;
@@ -558,21 +558,39 @@ section .cta:hover {
 		background-color: #ff7169;
 }
 
+.blog-h {
+		background: linear-gradient(to bottom, white, #dddddd);
+}
+
 .blog {
 		display: flex;
-		justify-content: space-between;
 }
 
 .blog .col {
-		box-sizing: border-box;
-		padding: 0 10px;
 		width: calc(100% / 3);
 		height: 400px;
-		background-color: green;
 }
 
-.blog .col .blog1 {
-		background-image: url(../img/blog/blog1.jpg);
+.blog .col:hover {
+		opacity: 0.8;
+}
+
+.blog .blog1 {
+		background-image: url(/assets/img/blog/blog1.jpg);
+		background-position: center;
+		background-size: cover;
+}
+
+.blog .blog2 {
+		background-image: url(/assets/img/blog/blog2.jpg);
+		background-position: center;
+		background-size: cover;
+}
+
+.blog .blog3 {
+		background-image: url(/assets/img/blog/blog3.jpg);
+		background-position: center;
+		background-size: cover;
 }
 
 .home-wrap {

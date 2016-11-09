@@ -1,14 +1,24 @@
+.blog-h
+   background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(221,221,221,1));
+
 .blog
   display: flex
-  justify-content: space-between
+
   .col
-    box-sizing: border-box
-    padding: 0 10px
     width: calc(100% / 3)
     height: 400px
-    background-color: green
+    &:hover
+      opacity: 0.8
 
-    .blog1
-      background-image: url(../img/blog/blog1.jpg)
-    .blog2
-    .blog3
+  .blog1
+    background-image: url(/assets/img/blog/blog1.jpg)
+    background-position: center
+    background-size: cover
+  .blog2
+    background-image: url(/assets/img/blog/blog2.jpg)
+    background-position: center
+    background-size: cover
+  .blog3
+    background-image: url(/assets/img/blog/blog3.jpg)
+    background-position: center
+    background-size: cover
