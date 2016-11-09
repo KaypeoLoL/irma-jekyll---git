@@ -568,7 +568,7 @@ section .cta:hover {
 
 .blog .col {
 		width: calc(100% / 3);
-		height: 400px;
+		padding-top: 400px;
 }
 
 .blog .col:hover {
