@@ -253,6 +253,15 @@ body {
 		-webkit-text-size-adjust: 100%;
 }
 
+h3 {
+		color: #FF4136;
+		margin: 0px;
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: 100px;
+		padding-bottom: 30px;
+}
+
 .button,
 button,
 input[type="submit"],
@@ -327,7 +336,6 @@ body {
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-		color: #222;
 		font-weight: bold;
 }
 
@@ -455,15 +463,6 @@ footer .lockup nav a {
 		padding: 10px;
 }
 
-section h3 {
-		color: #FF4136;
-		margin: 0px;
-		text-align: center;
-		text-transform: uppercase;
-		padding-top: 100px;
-		padding-bottom: 30px;
-}
-
 section .face-lockup {
 		max-width: 780px;
 		margin: auto;
@@ -539,6 +538,41 @@ section .text-wrap {
 		font-size: 24px;
 		text-align: center;
 		font-weight: 300;
+}
+
+section .cta {
+		font-weight: 600;
+		letter-spacing: 1.5px;
+		display: block;
+		margin: auto;
+		width: 100px;
+		text-align: center;
+		background-color: #FF4136;
+		border-radius: 5%;
+		padding: 10px 20px;
+		color: white;
+		text-transform: uppercase;
+}
+
+section .cta:hover {
+		background-color: #ff7169;
+}
+
+.blog {
+		display: flex;
+		justify-content: space-between;
+}
+
+.blog .col {
+		box-sizing: border-box;
+		padding: 0 10px;
+		width: calc(100% / 3);
+		height: 400px;
+		background-color: green;
+}
+
+.blog .col .blog1 {
+		background-image: url(../img/blog/blog1.jpg);
 }
 
 .home-wrap {
