@@ -568,7 +568,7 @@ section .cta:hover {
 
 .blog .col {
 		width: calc(100% / 3);
-		padding-top: 400px;
+		height: 400px;
 }
 
 .blog .col:hover {
@@ -576,19 +576,19 @@ section .cta:hover {
 }
 
 .blog .blog1 {
-		background-image: url(/assets/img/blog/blog1.jpg);
+		background-image: url(../img/blog/blog1.jpg);
 		background-position: center;
 		background-size: cover;
 }
 
 .blog .blog2 {
-		background-image: url(/assets/img/blog/blog2.jpg);
+		background-image: url(../img/blog/blog2.jpg);
 		background-position: center;
 		background-size: cover;
 }
 
 .blog .blog3 {
-		background-image: url(/assets/img/blog/blog3.jpg);
+		background-image: url(../img/blog/blog3.jpg);
 		background-position: center;
 		background-size: cover;
 }
