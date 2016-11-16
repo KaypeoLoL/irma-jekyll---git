@@ -1,19 +1,15 @@
-  <h3 class="blog-h">Blog</h3>
+<h3 class="blog-h">Blog news</h3>
 <section class="blog">
 
-  <div class="col blog1">
-    <div class="blog-overlay">
-
-    </div>
+{% for blog in site.data.settings.blogs %}
+<a href="#" class="col blog-img" style="background-image:url(/assets/img/blogs/{{blog.cover}})">
+  <div class="blog-overlay">
+    <h2><div class="line"></div>{{blog.title}}</h2>
   </div>
-  <div class="col blog2">
-    <div class="blog-overlay">
+</a>
+{% endfor%}
 
-    </div>
-  </div>
-  <div class="col blog3">
-    <div class="blog-overlay">
 
-    </div>
-  </div>
+
+
 </section>
