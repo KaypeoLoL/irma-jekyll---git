@@ -1,14 +1,17 @@
-<h3 class="blog-h">Blog news</h3>
+<h3 class="blog-start">Blog news</h3>
 <section class="blog">
+<div class="wrap">
+  {% for blog in site.data.settings.blogs limit: 3 %}
+  <a href="#" class="col blog-img" style="background-image:url(assets/img/blogs/{{blog.cover}})">
+    <div class="blog-overlay">
+      <h2><div class="line"></div>{{blog.title}}</h2>
 
-{% for blog in site.data.settings.blogs %}
-<a href="#" class="col blog-img" style="background-image:url(assets/img/blogs/{{blog.cover}})">
-  <div class="blog-overlay">
-    <h2><div class="line"></div>{{blog.title}}</h2>
-  </div>
-</a>
-{% endfor%}
+    </div>
+  </a>
+  {% endfor%}
+</div>
 
+<a href="#" class="cta .blog-end">Pogledaj još</a>
 
 
 

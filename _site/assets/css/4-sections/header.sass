@@ -4,23 +4,30 @@ header
   background-image: url(../img/hero.jpg)
   background-position: center
   background-size: cover
-  .logo
-    float: left
-    margin: 20px 0px 0px 30px
-    color: white
-  nav
-    float: right
-    margin: 30px 30px 0 0
-    a
-      display: inline-block
-      margin-left: 20px
-      color: rgba(255,255,255,0.6)
-      font-weight: 700
-      text-transform: uppercase
-      font-size: 14px
+  display: flex
+  flex-direction: column
 
-      &:hover
-        color: rgba(255, 255, 255, 1)
+  .wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .logo
+      padding: 20px 0px 0px 30px
+      color: white
+      margin: 0px
+    nav
+      margin: 30px 30px 0
+      a
+        display: inline-block
+        margin-left: 20px
+        color: rgba(255,255,255,0.6)
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 14px
+
+        &:hover
+          color: rgba(255, 255, 255, 1)
+
   h1
     text-align: center
     font-size: 72px
@@ -28,9 +35,9 @@ header
     color: white
     text-transform: uppercase
     letter-spacing: 0.05
-    margin-bottom: 20px
+    margin: 0px
     clear: both
-    padding-top: 100px
+    padding-top: 71px
     span
       display: inline-block
       border: white solid 10px

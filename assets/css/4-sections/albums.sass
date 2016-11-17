@@ -1,42 +1,53 @@
-.album-h
-  background: linear-gradient(to top, rgba(255,255,255,1),rgba(221,221,221,1))
-
-.flex-grid
+.albums
   margin: auto
-  display: flex
-  flex-wrap: wrap
   width: 100%
+  background-color: $main-color
+  padding-bottom: 50px
+  h3
+  .wrap
+    display: flex
+    flex-wrap: wrap
+    :nth-child(n+7)
+      @media screen and (max-width: 1000px)
+          display: none
+    .album
+      position: relative
+      width: calc(100%/4)
+      height: 300px
+      repeat: no-repeat
+      background-position: center
+      background-size: cover
+      overflow: hidden
+      @media screen and (max-width: 1000px)
+        width: calc(100%/3)
+        height: 250px
+      @media screen and (max-width: 650px)
+        width: calc(100%/2)
+        height: 200px
 
-  .album
-    position: relative
-    width: calc(100%/4)
-    height: 300px
-    repeat: no-repeat
-    background-position: center
-    background-size: cover
-    overflow: hidden
-    .album-hover
-      position: absolute
-      top: 100%
-      bottom: null
-      left: 0px
-      right: 0px
-      height: 100%
-      text-align: center
-      background: fade-out($olive, 0.6)
-      transition: all 0.3s ease-in-out
-    &:hover .album-hover
-      position: absolute
-      top: 0px
-      bottom: null
-      left: 0px
-      right: 0px
 
-    h4
-      padding: 20px
-      display: block
-      color: white
-      font-weight: 400
-      text-transform: uppercase
-      font-size: 30px
-      line-height: 1.2
+      .album-hover
+        position: absolute
+        top: 100%
+        bottom: null
+        left: 0px
+        right: 0px
+        height: 100%
+        text-align: center
+        background: fade-out($red, 0.6)
+        transition: all 0.3s ease-in-out
+      &:hover .album-hover
+        position: absolute
+        top: 0px
+        bottom: null
+        left: 0px
+        right: 0px
+
+      h4
+        padding: 20px
+        display: block
+        color: white
+        font-weight: 400
+        text-transform: uppercase
+        font-size: 30px
+        line-height: 1.2
