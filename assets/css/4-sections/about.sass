@@ -1,5 +1,4 @@
 section
-
   .face-lockup
     max-width: 780px
     margin: auto
@@ -34,9 +33,21 @@ section
         &:hover
           background-color: #e1306c
 
+  .text-wrap
+    padding: 0px 15px
+    max-width: 620px
+    margin: 50px auto
+    font-size: 24px
+    text-align: center
+    font-weight: 300
+    a
+      &:hover,
+      &:focus
+        color: lighten($red, 10%)
 
 
-  @media screen and (max-width: 650px)
+@media screen and (max-width: 650px)
+  section
     .face-lockup
       display: block
       text-align: center
@@ -49,18 +60,13 @@ section
         margin: auto
         margin-bottom: 30px
       [class^="icon-"]
-        padding: 30px
+        padding: 20px
 
-
-
-  .text-wrap
-    padding: 0px 15px
-    max-width: 620px
-    margin: 50px auto
-    font-size: 24px
-    text-align: center
-    font-weight: 300
-    a
-      &:hover,
-      &:focus
-        color: lighten($red, 10%)
+@media screen and (max-width: 430px)
+  .h3-about
+    margin: 0px
+  .face-img
+    width: 150px
+    height: 150px
+  [class^="icon-"]
+    padding: 5px

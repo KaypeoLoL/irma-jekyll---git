@@ -2,7 +2,7 @@
 <section class="blog">
 <div class="wrap">
   {% for blog in site.data.settings.blogs limit: 3 %}
-  <a href="#" class="col blog-img" style="background-image:url(assets/img/blogs/{{blog.cover}})">
+  <a href="#" class="col" style="background-image:url(assets/img/blogs/{{blog.cover}})">
     <div class="blog-overlay">
       <h2><div class="line"></div>{{blog.title}}</h2>
 

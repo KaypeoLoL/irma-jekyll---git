@@ -24,7 +24,6 @@ header
         font-weight: 700
         text-transform: uppercase
         font-size: 14px
-
         &:hover
           color: rgba(255, 255, 255, 1)
 
@@ -36,9 +35,26 @@ header
     text-transform: uppercase
     letter-spacing: 0.05
     margin: 0px
-    clear: both
     padding-top: 71px
     span
       display: inline-block
       border: white solid 10px
       padding: 0.2em 0.5em
+
+@media screen and (max-width: 650px)
+  nav
+    flex-grow: 1
+    display: flex
+    justify-content: space-around
+@media screen and (max-width: 430px)
+  header
+    height: 300px
+    .wrap
+      .logo
+        display: none
+      nav
+        margin: 30px 10px 0
+        a
+          margin-left: 0
+    h1
+      font-size: 55px

@@ -11,15 +11,12 @@
     .col
       width: calc(100% / 3)
       height: 500px
-
+      background-position: center
+      background-size: cover
       &:hover
         opacity: 0.9
       &:hover h2
           display: block
-
-    .blog-img
-      background-position: center
-      background-size: cover
 
     .blog-overlay
       display: flex
@@ -41,8 +38,6 @@
         color: white
         background-color: rgba(0, 0, 0, 0.5)
         box-sizing: border-box
-        @media screen and (max-width: 1000px)
-          font-size: 35px
         .line
           position: absolute
           bottom: 0
@@ -50,3 +45,22 @@
           width: 10px
           height: 100%
           background-color: $red
+
+@media screen and (max-width:1000px)
+  .blog
+    h2
+      font-size: 35px
+@media screen and (max-width: 750px)
+  .blog
+    display: block
+    .wrap
+      display: block
+      position: relative
+      .col
+        display: block
+        width: 100%
+        height: 300px
+@media screen and (max-width: 750px)
+  .blog-overlay
+    h2
+      font-size: 30px
