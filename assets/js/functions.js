@@ -1,3 +1,17 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+
+  $(window).scroll(function(){
+    stripScroll();
+  });
+
+
 
 });
+
+
+function stripScroll(){
+  var wScroll =$(window).scrollTop();
+  wScroll= wScroll/2;
+
+  $(".pic").css("background-position", "center -" +wScroll+ "px");
+}

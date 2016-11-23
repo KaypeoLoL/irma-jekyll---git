@@ -1,17 +1,16 @@
-<header>
+<header style="background-image:url(assets/img/{% if page.title %}{{page.image}}{% endif %})">
   <div class="wrap">
-
-  <h2 class="logo">IV</h2>
-
+  <a href="index.html">
+    <h2 class="logo">IV</h2>
+  </a>
     <nav>
-      <a href="">About Me</a>
-      <a href="">Blog</a>
-      <a href="">Albums</a>
-      <a href="">Contact</a>
+      <a href="about">About Me</a>
+      <a href="blog">Blog</a>
+      <a href="albums">Albums</a>
+      <a href="contact">Contact</a>
     </nav>
 
   </div>
 
-
-  <h1><span>{{ site.title }}</span></h1>
+    <h1><span>{% if page.title %}{{page.title}}{% endif %}</span></h1>
 </header>

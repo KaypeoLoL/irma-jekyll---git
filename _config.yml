@@ -1,16 +1,28 @@
 # Site settings
-title: Irma.jpg
+#title: Irma.jpg
 email: irma.jpg@gmail.com
 
+
+#background photos
+index-hero: index-hero.jpg
+about-hero: about-hero.jpg
+blog-hero: blog-hero.jpg
+contact-hero: contact-hero.jpg
 
 
 # Build settings
 
 markdown: kramdown
-permalink: pretty
+#permalink: pretty
+permalink: /:title/
+include: ["_pages"]
 
 port: 3000
 
 sass:
   sass_dir: assets/css
   style: :nested
+
+assets:
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]

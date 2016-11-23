@@ -1,6 +1,8 @@
 <section>
-  <h3 class="h3-about">About Myself</h3>
-  <div class="face-lockup">
+  {% if page.url =="/index" %}
+    <h3 class="h3-about">About Myself</h3>
+  {% endif %}
+  <div class="face-lockup {% if page.url =="/about" %}padding{% endif %}">
     <div class="face-img"></div>
     <div class="icon-facebook"><a href="https://www.facebook.com/irma.jpg.photography/">{% include icons/facebook.html %}</a></div>
     <div class="icon-instagram"><a href="https://www.instagram.com/irma.jpg/">{% include icons/instagram.html %}</a></div>
@@ -11,6 +13,7 @@
   <div class="text-wrap">
     <p>Zovem se <strong>Irma</strong>, dolazim iz Križevaca, imam 20 godina. Osim studiranja Socijalne pedagogije na Edukacijsko-rehabilitacijskom fakultetu, aktivna sam i u Udruzi studenata Koprivničko-križevačke županije, a s križevačkim srednjoškolcima radim na projektu <a href="https://www.facebook.com/inicijativaESPR/?fref=ts">Eat, sleep, party, repeat</a>. Fotografijom se bavim 5 godina i fotkam portrete.</p>
   </div>
-  <a href="#" class="cta">opširnije</a>
-
+  {% if page.url =="/index" %}
+    <a href="about" class="cta">opširnije</a>
+  {% endif %}
 </section>

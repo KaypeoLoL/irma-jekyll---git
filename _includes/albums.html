@@ -4,15 +4,16 @@
   <div class="wrap">
     {% for album in site.data.settings.albums  limit: 8 %}
 
-    <div class="album" style="background-image:url(assets/img/albums/{{album.cover}})">
+    <a href="#" class="album" style="background-image:url(assets/img/albums/{{album.cover}})">
       <div class="album-hover">
         <h4>{{ album.name }}</h4>
       </div>
 
-    </div>
+    </a>
 
     {% endfor %}
   </div>
 
   <a href="#" class="cta">Svi albumi</a>
+
 </section>

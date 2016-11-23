@@ -1,0 +1,59 @@
+.container
+  display: flex
+  width: 1000px
+  margin: auto
+  .wrap1
+    display: flex
+    height: auto
+    justify-content: space-around
+    flex-direction: column
+    p
+
+  .wrap2
+    display: flex
+    flex-direction: column
+    margin: auto
+    height: 100%
+    img
+      width: 300px
+    .pic
+      background-image: url(../img/film-photo.png)
+      background-position: center 0px
+      background-size: cover
+      background-repeat: repeat-y
+      width: 150px
+      height: 600px
+    .pic2
+      display: none
+
+.wrap3
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  max-width: 1000px
+  margin: auto
+  text-align: center
+
+@media screen and (max-width: 1000px)
+  .container
+    width: 100%
+@media screen and (max-width: 750px)
+  .container
+    display: block
+    .wrap1
+      display: block
+      margin: auto
+    .wrap2
+      display: block
+      img
+        display: none
+      .pic
+        display: none
+      .pic2
+        display: block
+        background-image: url(../img/film-photo-mobile.png)
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        width: 100%
+        height: 150px

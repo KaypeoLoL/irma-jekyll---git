@@ -410,7 +410,6 @@ hr {
 header {
 		height: 450px;
 		background: #ccc;
-		background-image: url(../img/hero.jpg);
 		background-position: center;
 		background-size: cover;
 		display: flex;
@@ -491,7 +490,7 @@ header h1 span {
 
 footer {
 		background-color: #2A2A2A;
-		height: 100px;
+		height: auto;
 }
 
 footer .lockup {
@@ -510,10 +509,14 @@ footer .lockup nav a:hover {
 
 footer .lockup .copyright {
 		margin: 0;
-		padding-top: 10px;
+		padding: 15px;
 		text-transform: uppercase;
 		font-size: 12px;
 		color: 16.47059%;
+}
+
+section .padding {
+		padding-top: 30px;
 }
 
 section .face-lockup {
@@ -713,12 +716,6 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 		flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1000px) {
-		.albums .wrap :nth-child(n+7) {
-				display: none;
-		}
-}
-
 .albums .wrap .album {
 		position: relative;
 		width: calc(100%/4);
@@ -727,20 +724,6 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 		background-position: center;
 		background-size: cover;
 		overflow: hidden;
-}
-
-@media screen and (max-width: 1000px) {
-		.albums .wrap .album {
-				width: calc(100%/3);
-				height: 250px;
-		}
-}
-
-@media screen and (max-width: 650px) {
-		.albums .wrap .album {
-				width: calc(100%/2);
-				height: 200px;
-		}
 }
 
 .albums .wrap .album .album-hover {
@@ -773,6 +756,23 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 		line-height: 1.2;
 }
 
+@media screen and (max-width: 1000px) {
+		.albums .wrap :nth-last-child(-n+2) {
+				display: none;
+		}
+		.albums .wrap .album {
+				width: calc(100%/3);
+				height: 250px;
+		}
+}
+
+@media screen and (max-width: 650px) {
+		.albums .wrap .album {
+				width: calc(100%/2);
+				height: 200px;
+		}
+}
+
 .contact {
 		background-color: #FF4136;
 		padding-bottom: 50px;
@@ -797,6 +797,101 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 		.contact h1 {
 				font-size: 30px;
 		}
+}
+
+.container {
+		display: flex;
+		width: 1000px;
+		margin: auto;
+}
+
+.container .wrap1 {
+		display: flex;
+		height: auto;
+		justify-content: space-around;
+		flex-direction: column;
+}
+
+.container .wrap2 {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		height: 100%;
+}
+
+.container .wrap2 img {
+		width: 300px;
+}
+
+.container .wrap2 .pic {
+		background-image: url(../img/film-photo.png);
+		background-position: center 0px;
+		background-size: cover;
+		background-repeat: repeat-y;
+		width: 150px;
+		height: 600px;
+}
+
+.container .wrap2 .pic2 {
+		display: none;
+}
+
+.wrap3 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		max-width: 1000px;
+		margin: auto;
+		text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+		.container {
+				width: 100%;
+		}
+}
+
+@media screen and (max-width: 750px) {
+		.container {
+				display: block;
+		}
+		.container .wrap1 {
+				display: block;
+				margin: auto;
+		}
+		.container .wrap2 {
+				display: block;
+		}
+		.container .wrap2 img {
+				display: none;
+		}
+		.container .wrap2 .pic {
+				display: none;
+		}
+		.container .wrap2 .pic2 {
+				display: block;
+				background-image: url(../img/film-photo-mobile.png);
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 150px;
+		}
+}
+
+.blog-grid {
+		width: 1000px;
+		height: auto;
+}
+
+.albums-section {
+		width: 80%;
+		display: flex;
+}
+
+.albums-section .wrap {
+		width: 80%;
+		display: flex;
 }
 
 .home-wrap {

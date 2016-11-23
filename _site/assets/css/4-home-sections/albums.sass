@@ -7,9 +7,6 @@
   .wrap
     display: flex
     flex-wrap: wrap
-    :nth-child(n+7)
-      @media screen and (max-width: 1000px)
-          display: none
     .album
       position: relative
       width: calc(100%/4)
@@ -18,13 +15,6 @@
       background-position: center
       background-size: cover
       overflow: hidden
-      @media screen and (max-width: 1000px)
-        width: calc(100%/3)
-        height: 250px
-      @media screen and (max-width: 650px)
-        width: calc(100%/2)
-        height: 200px
-
 
       .album-hover
         position: absolute
@@ -51,3 +41,18 @@
         text-transform: uppercase
         font-size: 30px
         line-height: 1.2
+
+@media screen and (max-width: 1000px)
+  .albums
+    .wrap
+      :nth-last-child(-n+2)
+        display: none
+      .album
+        width: calc(100%/3)
+        height: 250px
+@media screen and (max-width: 650px)
+  .albums
+    .wrap
+      .album
+        width: calc(100%/2)
+        height: 200px
