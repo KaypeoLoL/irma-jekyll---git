@@ -1,16 +1,4 @@
 #------------------------
-# Blogs section
-blogs:
-  - title: Tihana Krpanić kao Harley Quin
-    cover: blog1/blog1.jpg
-
-  - title: Odbrojavanje do noći vještica
-    cover: blog2/blog2.jpg
-
-  - title: Vikend u Rovinju sa mažoretkinjama
-    cover: blog3/blog3.jpg
-
-#------------------------
 # Albums section
 albums:
   - name: Album1
@@ -36,8 +24,6 @@ albums:
 
   - name: Album8
     cover: album8/cover8.jpg
-
-
 
 #------------------------
 # About pictures
