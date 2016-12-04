@@ -3854,7 +3854,7 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 
 .subscribe {
 		background: #FF4136;
-		background-image: url(/assets/img/bg1.jpg);
+		background-image: url(../img/bg1.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
