@@ -7,7 +7,7 @@
     display: inline-block
     width: 700px
     box-sizing: border-box
-    padding-right: 10px
+    padding-right: 30px
     .post-wrap
       margin: 30px 0px 50px
       .blog-img
@@ -58,5 +58,10 @@
         font-size: 16px
         margin: 40px 0px 0px
         padding: 0px
-      hr
-        border: 1px solid $red
+        &::after
+          content: ''
+          display: block
+          width: 60px
+          height: 1px
+          margin: 15px auto 23px
+          background: $red

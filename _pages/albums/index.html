@@ -4,11 +4,8 @@ layout: default
 title: albums
 image: heroes/albums-hero.jpg
 ---
+
 <div class="albums-section">
-
-
-</div>
-<div class="wrap">
   {% for album in site.data.settings.albums  limit: 8 %}
 
   <a href="#" class="album" style="background-image:url(assets/img/albums/{{album.cover}})">

@@ -1,8 +1,16 @@
 .albums-section
-  width: 80%
+  width: 100%
   display: flex
-  .wrap
-    width: 80%
-    display: flex
-    .album
-      .album-hover
+  flex-wrap: wrap
+
+  .album
+    margin: auto
+    width: calc(100%/2)
+    height: 600px
+    background-position: center
+    background-size: cover
+    overflow: hidden
+    &:hover
+      background-color: lightness($red)
+    h4
+      display: none
