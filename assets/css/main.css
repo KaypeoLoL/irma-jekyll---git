@@ -3983,15 +3983,6 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 		display: none;
 }
 
-.wrap3 {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		max-width: 1000px;
-		margin: auto;
-		text-align: center;
-}
-
 @media screen and (max-width: 1000px) {
 		.container {
 				width: 100%;
@@ -4024,6 +4015,44 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 				width: 100%;
 				height: 150px;
 		}
+}
+
+.container .wrap3 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+}
+
+.container .wrap3 .text-wrap {
+		width: 100%;
+}
+
+.container .wrap3 .text-wrap .vjestine {
+		margin-bottom: 50px;
+}
+
+.container .wrap3 .text-wrap .vjestine .vjestina .opis {
+		text-align: left;
+}
+
+.container .wrap3 .text-wrap .vjestine .vjestina .bar {
+		width: 100%;
+		font-size: 0;
+		margin-bottom: 20px;
+}
+
+.container .wrap3 .text-wrap .vjestine .vjestina .bar span {
+		display: inline-block;
+		background-color: #FF4136;
+		width: 10%;
+		height: 8px;
+}
+
+.container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-1 span:nth-child(n+1), .container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-2 span:nth-child(n+2), .container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-3 span:nth-child(n+3), .container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-4 span:nth-child(n+4), .container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-5 span:nth-child(n+5), .container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-6 span:nth-child(n+6), .container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-7 span:nth-child(n+7), .container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-8 span:nth-child(n+8), .container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-9 span:nth-child(n+9), .container .wrap3 .text-wrap .vjestine .vjestina .bar.skill-10 span:nth-child(n+10) {
+		background-color: #aaaaaa;
 }
 
 .blog-grid {
@@ -4116,6 +4145,70 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 		background: #FF4136;
 }
 
+.blog-container {
+		background-color: #F8F8FF;
+}
+
+.blog-container .blog-wrap {
+		max-width: 960px;
+		margin: 0px auto 100px;
+		background-color: white;
+		padding: 0px 10px;
+}
+
+.blog-container .blog-wrap .blog-info {
+		display: flex;
+		justify-content: space-around;
+		width: 80%;
+		margin: auto;
+		padding-top: 15px;
+}
+
+.blog-container .blog-wrap .blog-info i {
+		padding-right: 10px;
+}
+
+.blog-container .blog-wrap .blog-title {
+		width: 80%;
+		margin: auto;
+}
+
+.blog-container .blog-wrap .blog-title h1 {
+		margin: 0px;
+		font-size: 45px;
+		text-align: center;
+		font-weight: bold;
+		padding: 30px 10px 30px;
+}
+
+.blog-container .blog-wrap .blog-paragraph {
+		width: 80%;
+		margin: auto;
+}
+
+.blog-container .blog-wrap .blog-paragraph h2 {
+		margin: 0px;
+		font-size: 20px;
+		font-weight: bold;
+		padding-bottom: 20px;
+}
+
+.blog-container .blog-wrap .blog-body {
+		width: 80%;
+		margin: auto;
+}
+
+.blog-container .blog-wrap .blog-body p {
+		line-height: 180%;
+		font-size: 22px;
+		font-weight: 100;
+		padding: 10px;
+}
+
+.blog-container .blog-wrap .blog-body img {
+		width: 100%;
+}
+
 .albums-section {
 		width: 100%;
 		display: flex;
@@ -4137,6 +4230,15 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 
 .albums-section .album h4 {
 		display: none;
+}
+
+.contact-container {
+		min-height: 1000px;
+}
+
+.contact-container h1 {
+		text-align: center;
+		color: pink;
 }
 
 .home-wrap {

@@ -1,67 +1,48 @@
-.blog-grid
-  max-width: 1000px
-  height: auto
-  margin: auto
+.blog-container
+  background-color: $ghost-white
 
-  .main-col
-    display: inline-block
-    width: 700px
-    box-sizing: border-box
-    padding-right: 30px
-    .post-wrap
-      margin: 30px 0px 50px
-      .blog-img
-        width: 100%
-        height: 400px
-        background-repeat: no-repeat
-        background-position: center
-        background-size: cover
-      .blog-info
-        display: flex
-        p
-          margin: 5px 15px 5px 5px
-        i
-          margin-right: 10px
-      h3
-        margin: 0px 10px 10px
-        padding: 0px
-        text-align: left
-        text-transform: none
-      p
+  .blog-wrap
+    max-width: 960px
+    margin: 0px auto 100px
+    background-color: white
+    padding: 0px 10px
+
+    .blog-info
+      display: flex
+      justify-content: space-around
+      width: 80%
+      margin: auto
+      padding-top: 15px
+      .blog-date
+      .blog-author
+      .blog-category
+      i
+        padding-right: 10px
+
+    .blog-title
+      width: 80%
+      margin: auto
+      h1
         margin: 0px
-        padding-left: 10px
-        color: gray
-        font-size: 15px
-      hr
-        border: 2px solid $red
-
-
-
-
-  .side-col
-    display: inline-block
-    width: 300px
-    float: right
-    clear: both
-    .social-feed
-      text-align: center
-      margin: 50px 0px
-      .instagram
-        iframe
-          display: block
-          width: 300px
-          height: 300px
-          border: none
-          overflow: visible
-      .facebook
-      h5
-        font-size: 16px
-        margin: 40px 0px 0px
-        padding: 0px
-        &::after
-          content: ''
-          display: block
-          width: 60px
-          height: 1px
-          margin: 15px auto 23px
-          background: $red
+        font-size: 45px
+        text-align: center
+        font-weight: bold
+        padding: 30px 10px 30px
+    .blog-paragraph
+      width: 80%
+      margin: auto
+      h2
+        margin: 0px
+        font-size: 20px
+        font-weight: bold
+        padding-bottom: 20px
+    .blog-body
+      width: 80%
+      margin: auto
+      p
+        line-height: 180%
+        font-size: 22px
+        font-weight: 100
+        padding: 10px
+      img
+        width: 100%

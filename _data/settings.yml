@@ -33,3 +33,22 @@ about-pictures:
   - pic: profile2.jpg
   - pic: profile3.jpg
   - pic: profile4.jpg
+
+#------------------------
+# About skills
+
+skills:
+  - name: skill 1
+    value: 7
+
+  - name: skill 2
+    value: 9
+
+  - name: skill 3
+    value: 8
+
+  - name: skill 4
+    value: 6
+
+  - name: skill 5
+    value: 10

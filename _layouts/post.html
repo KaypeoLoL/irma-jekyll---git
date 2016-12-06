@@ -9,6 +9,7 @@
 <body>
   <header style="background-image:url(/../assets/img/{{page.image}})">
     <div class="wrap">
+
     <a href="/../index.html">
       <h2 class="logo">IV</h2>
     </a>
@@ -22,8 +23,36 @@
     </div>
 
   </header>
+<div class="blog-container">
+  <div class="blog-wrap">
 
-{{content}}
+    <div class="blog-info">
+
+      <p class="blog-date"><i class="fa fa-calendar-o"></i>{{page.date | date: "%d/%m/%Y"}}</p>
+
+      <p class=blog-author><i class="fa fa-pencil" aria-hidden="true"></i>{{page.author}}</p>
+
+      <p class="blog-category"><i class="fa fa-th-large" aria-hidden="true"></i>{{page.categories}}</p>
+
+    </div>
+
+
+    <div class="blog-title">
+      <h1>{{page.blog_title}}</h1>
+    </div>
+
+    <div class="blog-paragraph">
+      <h2>{{page.paragraph}}</h2>
+    </div>
+    <div class="blog-body">
+      {{content}}
+    </div>
+
+  </div>
+</div>
+
+
+
 {% include footer.html %}
 <script src="/../assets/js/instagram.js"></script>
 <script src="/../assets/js/jquery-2.1.1.min.js"></script>
