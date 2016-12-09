@@ -20,12 +20,12 @@ image: heroes/blog-hero.jpg
             <p><i class="fa fa-calendar-o"></i>{{post.date | date: "%d/%m/%Y"}}</p>
 
             <p><i class="fa fa-pencil" aria-hidden="true"></i>{{post.author}}</p>
-            <p><i class="fa fa-th-large" aria-hidden="true"></i>{{post.category}}</p>
+            <p><i class="fa fa-th-large" aria-hidden="true"></i>{{post.categories}}</p>
 
           </div>
 
-          <h3>{{post.blog_title}}</h3>
-          <p>{{post.paragraph}}</p>
+          <h3>{{post.blog_title | truncate: 60}}</h3>
+          <p>{{post.excerpt| truncate: 200}} </p><a class="cta-reading" href="#">nastavi čitati</a>
           <hr>
       </div>
     </a>

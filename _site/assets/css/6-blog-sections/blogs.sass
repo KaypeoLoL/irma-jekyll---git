@@ -30,8 +30,19 @@
       p
         margin: 0px
         padding-left: 10px
+        padding-bottom: 15px
         color: gray
         font-size: 15px
+      .cta-reading
+        background-color: $red
+        color: white
+        text-align: center
+        border-radius: 5px
+        padding: 10px
+        margin-left: 10px
+        transition: background-color .4s
+        &:hover
+          background-color: darken($red, 10%)
       hr
         border: 2px solid $red
 
@@ -44,7 +55,7 @@
     float: right
     clear: both
     .category
-      
+
     .social-feed
       text-align: center
       margin: 50px 0px

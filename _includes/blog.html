@@ -6,7 +6,7 @@
     {% for post in site.posts limit: 3 %}
     <a href="{{post.url}}" class="col" style="background-image:url(assets/img/{{post.image}})">
       <div class="blog-overlay">
-        <h2><div class="line"></div>{{post.blog_title}}</h2>
+        <h2><div class="line"></div>{{post.blog_title | truncate: 60}}</h2>
 
       </div>
     </a>

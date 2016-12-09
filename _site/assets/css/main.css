@@ -4102,8 +4102,23 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 .blog-grid .main-col .post-wrap p {
 		margin: 0px;
 		padding-left: 10px;
+		padding-bottom: 15px;
 		color: gray;
 		font-size: 15px;
+}
+
+.blog-grid .main-col .post-wrap .cta-reading {
+		background-color: #FF4136;
+		color: white;
+		text-align: center;
+		border-radius: 5px;
+		padding: 10px;
+		margin-left: 10px;
+		transition: background-color .4s;
+}
+
+.blog-grid .main-col .post-wrap .cta-reading:hover {
+		background-color: #ff1103;
 }
 
 .blog-grid .main-col .post-wrap hr {

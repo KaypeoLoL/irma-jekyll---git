@@ -13,7 +13,7 @@ contact-hero: contact-hero.jpg
 # Build settings
 
 markdown: kramdown
-permalink: pretty
+permalink: /:categories/:title/
 
 include: ["_pages"]
 
