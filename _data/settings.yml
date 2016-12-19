@@ -2,29 +2,30 @@
 # Albums section
 albums:
   - name: Album1
-    cover: album1/cover1.jpg
+    cover: cover1.jpg
+    cover2: album1/cover1.jpg
 
   - name: Album2
-    cover: album2/cover2.jpg
-
+    cover: cover2.jpg
+    cover2: album2/cover2.jpg
   - name: Album3
-    cover: album3/cover3.jpg
-
+    cover: cover3.jpg
+    cover2: album3/cover3.jpg
   - name: Album4
-    cover: album4/cover4.jpg
-
+    cover: cover4.jpg
+    cover2: album4/cover4.jpg
   - name: Album5
-    cover: album5/cover5.jpg
-
+    cover: cover5.jpg
+    cover2: album5/cover5.jpg
   - name: Album6
-    cover: album6/cover6.jpg
-
+    cover: cover6.jpg
+    cover2: album6/cover6.jpg
   - name: Album7
-    cover: album7/cover7.jpg
-
+    cover: cover7.jpg
+    cover2: album7/cover7.jpg
   - name: Album8
-    cover: album8/cover8.jpg
-
+    cover: cover8.jpg
+    cover2: album8/cover8.jpg
 #------------------------
 # About pictures
 

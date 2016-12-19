@@ -18,6 +18,9 @@
         background-size: cover
       .blog-info
         display: flex
+        justify-content: space-around
+        width: 100%
+        margin: auto
         p
           margin: 5px 15px 5px 5px
         i
@@ -55,10 +58,27 @@
     float: right
     clear: both
     .category
+      ul
+        font-weight: 700
+      li, a
+        list-style: none
+        text-align: left
+        padding-left: 40px
+      a
+        display: inline-block
+        width: 100%
 
     .social-feed
       text-align: center
       margin: 50px 0px
+      .category
+        i
+        ul
+          text-align: left
+          list-style-type: none
+          a
+            color: $main-color
+
       .instagram
         iframe
           display: block

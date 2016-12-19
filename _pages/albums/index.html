@@ -3,16 +3,17 @@ permalink: "/albums"
 layout: default
 title: albums
 image: heroes/albums-hero.jpg
+navigation_weight: 2
 ---
 
 <div class="albums-section">
   {% for album in site.data.settings.albums  limit: 8 %}
 
-  <a href="#" class="album" style="background-image:url(assets/img/albums/{{album.cover}})">
-    <div class="album-hover">
-      <h4>{{ album.name }}</h4>
-    </div>
+<!--<a href="#" class="album" style="background-image:url(assets/img/albums/{{album.cover}})">-->
+  <a href="" class="album1">
+    <div class="img1 zoom" style="background-image:url(/../assets/img/albums/thumbnails/{{album.cover}})">
 
+    </div>
   </a>
 
   {% endfor %}

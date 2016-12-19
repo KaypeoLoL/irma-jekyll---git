@@ -1,13 +1,17 @@
-<header style="background-image:url(assets/img/{% if page.title %}{{page.image}}{% endif %})">
+<header style="background-image:url(/../assets/img/{% if page.title %}{{page.image}}{% endif %})">
   <div class="wrap">
-  <a href="index.html">
+  <a href="/../index.html">
     <h2 class="logo">IV</h2>
   </a>
     <nav>
-      <a href="about">About Me</a>
-      <a href="blog">Blog</a>
-      <a href="albums">Albums</a>
-      <a href="contact">Contact</a>
+      {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+      {% for p in navigation_pages %}
+      {% if p.navigation_weight %}
+          <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+            {{ p.title }}
+          </a>
+      {% endif %}
+    {% endfor %}
     </nav>
 
   </div>

@@ -18,7 +18,11 @@ permalink: /:categories/:title/
 include: ["_pages"]
 
 port: 3000
-
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
 sass:
   sass_dir: assets/css
   style: :nested
