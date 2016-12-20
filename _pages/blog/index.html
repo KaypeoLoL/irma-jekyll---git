@@ -12,7 +12,7 @@ navigation_weight: 3
 
   <div class="main-col">
     {% for post in site.posts limit: 10 %}
-    <a href="{{post.url}}">
+    <a href="{{site.baseurl}}{{post.url}}">
       <div class="post-wrap">
           <div class="blog-img" style="background-image:url(assets/img/{{post.image}})"></div>
 
@@ -26,7 +26,7 @@ navigation_weight: 3
           </div>
 
           <h3>{{post.blog_title | truncate: 60}}</h3>
-          <p>{{post.excerpt| truncate: 200}} </p><a class="cta-reading" href="{{ post.url }}">nastavi čitati</a>
+          <p>{{post.excerpt| truncate: 200}} </p><a class="cta-reading" href="{{ site.baseurl }}{{ post.url }}">nastavi čitati</a>
           <hr>
       </div>
     </a>
