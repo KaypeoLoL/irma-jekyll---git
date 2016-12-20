@@ -1,9 +1,0 @@
-{% for year in site.years %}
-   <ul>{{ year.first.first.date | date: "%Y" }}</ul>
-   {% for month in year %}
-     <li>{{ month.first.date | date: "%B" }}</li>
-     {% for post in month %}
-       <a href="{{site.baseurl}}{{ post.url}}">{{ post.title }}</a>
-     {% endfor %}
-   {% endfor %}
- {% endfor %}
