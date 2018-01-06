@@ -3961,6 +3961,7 @@ section .text-wrap a:hover, section .text-wrap a:focus {
 		height: auto;
 		justify-content: space-around;
 		flex-direction: column;
+		texta-align: justify;
 }
 
 .container .wrap2 {
