@@ -3631,6 +3631,7 @@ section .text-wrap {
 		font-size: 24px;
 		text-align: center;
 		font-weight: 300;
+		text-align: justify;
 }
 
 section .text-wrap a:hover, section .text-wrap a:focus {
